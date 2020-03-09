@@ -6,10 +6,14 @@ namespace Facade_Demo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Kallar på facaden för att hämta data
             var facade = new Facade();
             var data = facade.GetAllData();
-            Console.WriteLine(data);
+            //Skriver ut datan...
+            foreach (var item in data)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
