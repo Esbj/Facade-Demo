@@ -27,6 +27,7 @@ namespace Facade_Demo
 
     }
     public class subsys1 //subsystem med data
+    //kan finnas flera underliggande, nästlade klasser eller kopplingar till API man vill gömma
     {
         public subsys1()//konstruktor som förhindrar att man ändrar på dom faktiska värden i systemet. 
         {
@@ -38,18 +39,5 @@ namespace Facade_Demo
         public string Data2 { get; set; }
         private string data2 = "Hejsan svejsan!";
 
-    }
-    public class subsys2  //subsystem med data
-    {
-        public subsys2()
-        {
-            Info1 = information1;
-            Info2 = information2;
-        }
-        //kan finnas flera subsystem nestlade eller kontakter med API som blir krångligt att hantera direkt i Main
-        public string Info1 { get; set; }
-        public string Info2 { get; set; }
-        private string information1 = "Abra kadabra";
-        private string information2 = "Hokus pokus!";
     }
 }
